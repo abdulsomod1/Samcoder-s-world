@@ -364,6 +364,11 @@ footer {
     margin-top: 10px;
 }
 
+/* Utility to hide excess review cards for pagination */
+.hidden {
+    display: none !important;
+}
+
 /* Responsive Design */
 .nav-toggle {
     display: none;
