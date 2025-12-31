@@ -1,6 +1,4 @@
-# TODO: Add CAC Registration to Services
+# TODO: Add Telegram Button to Customer Service Page
 
-- [ ] Add new service card for "CAC Registration" to the services section in index.html
-- [ ] Create a new folder `templates/cac-registration/` for CAC registration templates
-- [ ] Update templates/README.md to include the new CAC registration service folder
-- [ ] Verify the changes by running the website locally and checking the services section
+- [ ] Edit index.html: Add a new Telegram button link (https://t.me/joegoov) in the customer-service section, styled similarly to the WhatsApp button.
+- [ ] Edit styles.css: Add a new .telegram-btn class with Telegram's brand blue color (#0088cc) for the button.

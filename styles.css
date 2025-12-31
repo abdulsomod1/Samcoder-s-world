@@ -117,6 +117,15 @@ nav ul li a:hover {
     background-color: #128c7e;
 }
 
+.telegram-btn {
+    background-color: #0088cc;
+    color: #fff;
+}
+
+.telegram-btn:hover {
+    background-color: #006699;
+}
+
 /* Services */
 #services {
     background-color: #fff;
