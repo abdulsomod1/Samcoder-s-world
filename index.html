@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fast, reliable, and affordable web, app and design services from SAMCODERS WORLD.">
     <title>My Services Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -10,9 +11,11 @@
     <header>
         <nav>
             <div class="logo">SAMCODERS WORLD</div>
-            <ul>
+            <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <ul aria-label="Primary navigation">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#customer-service">Customer Service</a></li>
@@ -20,6 +23,8 @@
         </nav>
     </header>
 
+    <a class="skip-link" href="#main">Skip to content</a>
+    <main id="main">
     <section id="home" class="section">
         <div class="container">
             <h1>Welcome to SAMCODERS WORLD</h1>
@@ -68,22 +73,207 @@
         </div>
     </section>
 
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <div class="review-form-container">
+                <h3>Leave a Review</h3>
+                <form id="reviewForm" aria-label="Leave a review">
+                    <label for="reviewerName" class="sr-only">Your name</label>
+                    <input type="text" id="reviewerName" placeholder="Your Name" required>
+                    <label for="reviewerLocation" class="sr-only">Your location</label>
+                    <input type="text" id="reviewerLocation" placeholder="Your Location" required>
+                    <label for="reviewerStars" class="sr-only">Rating</label>
+                    <select id="reviewerStars" required>
+                        <option value="">Select Rating</option>
+                        <option value="★★★★★">5 Stars</option>
+                        <option value="★★★★☆">4 Stars</option>
+                        <option value="★★★☆☆">3 Stars</option>
+                    </select>
+                    <label for="reviewText" class="sr-only">Review</label>
+                    <textarea id="reviewText" placeholder="Write your review..." required></textarea>
+                    <button type="submit" class="btn">Submit Review</button>
+                </form>
+            </div>
+
+            <div class="reviews-grid" id="reviewsGrid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"SAMCODERS WORLD provided fast and reliable web development services. Highly affordable and professional!"</p>
+                    <p class="reviewer">- Adebayo Johnson, Nigeria</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Excellent app development! They delivered on time and the quality is top-notch. Very affordable."</p>
+                    <p class="reviewer">- Fatima Adeyemi, Nigeria</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Graphics design work was stunning and fast. Reliable service at an affordable price."</p>
+                    <p class="reviewer">- Chukwuemeka Nwosu, Nigeria</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Bot referrals helped grow my social media. Fast, reliable, and affordable!"</p>
+                    <p class="reviewer">- Ngozi Okoye, Nigeria</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Review services were authentic and quick. Great value for money."</p>
+                    <p class="reviewer">- Ibrahim Musa, Nigeria</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Selling group active members was seamless. Fast and reliable."</p>
+                    <p class="reviewer">- Amina Hassan, Nigeria</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"CAC registration was handled professionally and affordably."</p>
+                    <p class="reviewer">- Olusegun Adeolu, Nigeria</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Mentorship sessions were insightful and fast-paced. Highly recommend!"</p>
+                    <p class="reviewer">- Blessing Eze, Nigeria</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Overall services are reliable and affordable. Great experience."</p>
+                    <p class="reviewer">- Kemi Adebayo, Nigeria</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Fast delivery on all projects. SAMCODERS WORLD is reliable and affordable."</p>
+                    <p class="reviewer">- Tunde Ogunleye, Nigeria</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Web development was top-notch. Fast, reliable, and affordable."</p>
+                    <p class="reviewer">- Sarah Thompson, UK</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"App development exceeded expectations. Professional and affordable."</p>
+                    <p class="reviewer">- James Wilson, UK</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Graphics design was creative and fast. Reliable service."</p>
+                    <p class="reviewer">- Emily Davis, UK</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Bot referrals boosted my growth. Fast and affordable."</p>
+                    <p class="reviewer">- Michael Brown, UK</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Review services were genuine. Great value."</p>
+                    <p class="reviewer">- Olivia Johnson, UK</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Active members for groups were delivered quickly. Reliable."</p>
+                    <p class="reviewer">- William Taylor, UK</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"CAC registration was smooth and affordable."</p>
+                    <p class="reviewer">- Sophia Anderson, UK</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Mentorship was valuable and fast. Highly affordable."</p>
+                    <p class="reviewer">- Daniel Martinez, UK</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"All services are reliable and affordable. Recommend to all."</p>
+                    <p class="reviewer">- Isabella Garcia, UK</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Fast and professional work. SAMCODERS WORLD is affordable."</p>
+                    <p class="reviewer">- Ethan Rodriguez, UK</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Web development was excellent. Fast and reliable."</p>
+                    <p class="reviewer">- Aarav Sharma, India</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"App development was outstanding. Affordable and fast."</p>
+                    <p class="reviewer">- Vihaan Patel, India</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Graphics design was beautiful. Reliable service."</p>
+                    <p class="reviewer">- Ananya Singh, India</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Bot referrals helped immensely. Fast and affordable."</p>
+                    <p class="reviewer">- Rohan Kumar, India</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Review services were authentic. Great affordability."</p>
+                    <p class="reviewer">- Priya Gupta, India</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Active members were delivered promptly. Reliable."</p>
+                    <p class="reviewer">- Arjun Rao, India</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"CAC registration was professional and affordable."</p>
+                    <p class="reviewer">- Meera Iyer, India</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Mentorship was insightful. Fast and affordable."</p>
+                    <p class="reviewer">- Karan Joshi, India</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Services are reliable and affordable. Loved the experience."</p>
+                    <p class="reviewer">- Sneha Reddy, India</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Fast delivery and professional work. Highly affordable."</p>
+                    <p class="reviewer">- Vikram Nair, India</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:20px;">
+                <button id="loadMoreBtn" class="btn">Load more</button>
+            </div>
+        </div>
+    </section>
+
     <section id="portfolio" class="section">
         <div class="container">
             <h2>Portfolio</h2>
             <div class="portfolio-grid">
+                <a href="https://tenifayo-portfolio-01.netlify.app/" target="_blank">
+                    <div class="portfolio-item">
+                        <img src="my portfolio.jpg" alt="Project 1">
+                        <p>Web Development Project</p>
+                    </div>
+                </a>
                 <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/300x200?text=Project+1" alt="Project 1">
-                    <p>Web Development Project</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/300x200?text=Project+2" alt="Project 2">
+                    <img src="app.png" alt="App Development Project">
                     <p>App Development Project</p>
                 </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/300x200?text=Project+3" alt="Project 3">
-                    <p>Graphics Design Project</p>
-                </div>
+                <a href="https://drive.google.com/drive/folders/1ZQeaf-MByQoGM-xLfXRiUPJnaGiiay6B?usp=drive_link" target="_blank">
+                    <div class="portfolio-item">
+                        <img src="my image.png" alt="Graphics Design Project">
+                        <p>Graphics Design Project</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -108,11 +298,89 @@
         <a href="https://t.me/joegoov" class="btn telegram-btn" target="_blank">Chat on Telegram</a>
         </div>
     </section>
+    </main>
 
     <footer>
         <p>&copy; 2023 SAMCODERS WORLD. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile nav toggle
+            const navToggle = document.getElementById('navToggle');
+            const navUl = document.querySelector('nav ul');
+            if (navToggle && navUl) {
+                navToggle.addEventListener('click', function() {
+                    const open = navUl.classList.toggle('open');
+                    navToggle.setAttribute('aria-expanded', open);
+                });
+            }
+
+            const reviewsGrid = document.getElementById('reviewsGrid');
+            const reviewForm = document.getElementById('reviewForm');
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            const REVIEWS_BATCH = 8;
+
+            // Move any server-defined reviews are already in DOM; hide extras
+            function updateVisibility() {
+                const cards = Array.from(reviewsGrid.querySelectorAll('.review-card'));
+                cards.forEach((c, i) => c.classList.toggle('hidden', i >= visibleCount));
+                if (cards.length <= visibleCount) loadMoreBtn.classList.add('hidden');
+            }
+
+            // Load saved reviews from localStorage and append
+            function loadSavedReviews() {
+                const saved = JSON.parse(localStorage.getItem('reviews') || '[]');
+                saved.forEach(r => {
+                    const card = document.createElement('div');
+                    card.className = 'review-card';
+                    card.innerHTML = `<div class="stars">${r.stars}</div><p>"${r.text}"</p><p class="reviewer">- ${r.name}, ${r.location}</p>`;
+                    reviewsGrid.appendChild(card);
+                });
+            }
+
+            // Append new review to localStorage
+            if (reviewForm) {
+                reviewForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const name = document.getElementById('reviewerName').value.trim();
+                    const location = document.getElementById('reviewerLocation').value.trim();
+                    const stars = document.getElementById('reviewerStars').value;
+                    const text = document.getElementById('reviewText').value.trim();
+                    if (!name || !location || !stars || !text) return alert('Please fill out all fields.');
+
+                    const reviewObj = { name, location, stars, text };
+                    const card = document.createElement('div');
+                    card.className = 'review-card';
+                    card.innerHTML = `<div class="stars">${stars}</div><p>"${text}"</p><p class="reviewer">- ${name}, ${location}</p>`;
+                    reviewsGrid.insertBefore(card, reviewsGrid.firstChild);
+
+                    const reviews = JSON.parse(localStorage.getItem('reviews') || '[]');
+                    reviews.unshift(reviewObj);
+                    localStorage.setItem('reviews', JSON.stringify(reviews));
+
+                    this.reset();
+                    alert('Review submitted successfully!');
+                    visibleCount++;
+                    updateVisibility();
+                });
+            }
+
+            // Load more button behavior
+            let visibleCount = REVIEWS_BATCH;
+            loadMoreBtn.addEventListener('click', function() {
+                visibleCount += REVIEWS_BATCH;
+                updateVisibility();
+            });
+
+            loadSavedReviews();
+            updateVisibility();
+
+            // Update footer year
+            const footerP = document.querySelector('footer p');
+            if (footerP) footerP.innerHTML = `&copy; ${new Date().getFullYear()} SAMCODERS WORLD. All rights reserved.`;
+        });
+    </script>
 </body>
 </html>
