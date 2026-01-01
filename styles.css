@@ -434,6 +434,7 @@ nav ul.open li a {
 @media (max-width: 768px) {
     .nav-toggle {
         display: block;
+        margin-left: 1.6rem; /* increased space between logo and toggle on small screens */
     }
 
     nav {
