@@ -1,7 +1,6 @@
 const express = require('express');
 const { createClient } = require('@supabase/supabase-js');
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(express.static('.'));
@@ -58,6 +57,11 @@ app.post('/api/reviews', async (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-});
+if (require.main === module) {
+    const PORT = process.env.PORT || 3000;
+    app.listen(PORT, () => {
+        console.log(`Server running on http://localhost:${PORT}`);
+    });
+}
+
+module.exports = app;
